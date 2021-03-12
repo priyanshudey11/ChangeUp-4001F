@@ -14,9 +14,9 @@ void setdrive(int forward, int back)
     //left front.
     driveLF.move_voltage(forward);
     //left back
-    driveLB.move_voltage(forward);
+    driveLB.move_voltage(back);
     //right front
-    driveRF.move_voltage(back);
+    driveRF.move_voltage(forward);
     //right back
     driveRB.move_voltage(back);
   }
