@@ -12,14 +12,14 @@ void setdrive(int forward, int back)
     */
     forward *= 12000.0 / 127.0;
     back *= -12000.0 / 127.0;
-    //left front.
-    driveLF.move_voltage(forward);
+    //left front motors are set backword 
+    driveLF.move_voltage(back);
     //left back
-    driveLB.move_voltage(back);
-    //right front
-    driveRF.move_voltage(forward);
+    driveLB.move_voltage(forward);
+    //right front moters are set backwards 
+    driveRF.move_voltage(back);
     //right back
-    driveRB.move_voltage(back);
+    driveRB.move_voltage(forward);
   }
 void setdrivemotors()
   {
