@@ -75,7 +75,7 @@ void opcontrol(void);
 #include "subsystemheaders/drive.hpp"
 #include "subsystemheaders/globals.hpp"
 #include "subsystemheaders/intake.hpp"
-#include "subsystemheaders/intake.hpp"
+#include "subsystemheaders/rollers.hpp"
 #endif
 
 #endif  // _PROS_MAIN_H_
