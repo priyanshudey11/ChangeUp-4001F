@@ -47,7 +47,7 @@ void setdrivemotors()
   */
   {
   int forward = mainController.get_analog(E_CONTROLLER_ANALOG_LEFT_X)*(-1); // get Y value from left analog stick
-  int turn = mainController.get_analog(E_CONTROLLER_ANALOG_LEFT_Y); // get X value from right analog stick
+  int turn = mainController.get_analog(E_CONTROLLER_ANALOG_RIGHT_Y); // get X value from right analog stick
   int left =  forward +turn;
   int right = forward- turn;
  if(std::abs(forward) < 16)
